@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	*{
+      padding: 0px;
+      margin: 0px;
+	}
+	body
+    {
+      background-color:lightgrey;
+      max-width: 100%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+	.ll1
+    {
+      
+      left: 0px;
+      top: 0px;
+      height: 50px;
+      width: 100%;
+      position: fixed;
+      background: linear-gradient(90deg,#135058,black,#135058);
+      box-shadow: 1px 2px 3px ;
+
+    }
+        .ss input[type="button"]
+    {
+      top: 5px;
+      width: 100px;
+      outline: none;
+      border-bottom: 1.5px solid black;
+      background: transparent;
+      color: black;
+      font-size: 15px;
+      border-top-left-radius: 20px 20px;
+      border-bottom-left-radius: 20px 20px;
+      border-top-right-radius: 20px 20px;
+      border-bottom-right-radius: 20px 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      transition: 0.2s;
+      left: 1140px;
+      position:absolute;
+      background: rgba(171, 205, 239, 0.3);
+      text-align: center;
+      letter-spacing: 2px;
+      font-family:cursive;
+    }
+.ss input[type="button"]:hover
+{
+ cursor: pointer;
+ background-color:#444;
+
+ }
+  .ss input[type="button"]:active
+ {
+  transform: translate(3px);
+}
+
+ 
+.dd input[type="button"]
+    {
+      top: 5px;
+      width: 100px;
+      outline: none;
+      border-bottom: 1.5px solid black;
+      color: black;
+      font-size: 15px;
+      border-top-left-radius: 20px 20px;
+      border-bottom-left-radius: 20px 20px;
+      border-top-right-radius: 20px 20px;
+      border-bottom-right-radius: 20px 20px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      transition: 0.2s;
+      left: 1250px;
+      background::linear-gradient(90deg,#80d0c7,#13547a,#80d0c7);
+      position:absolute;
+      background: rgba(171, 205, 239, 0.3);
+      opacity: 5.0;
+      filter: alpha(opacity=500);
+      text-align: center;
+      letter-spacing: 2px;
+      font-family:cursive;
+    }
+
+.dd input[type="button"]:hover
+{
+ cursor: pointer;
+ background-color:#444;
+
+ }
+   .dd input[type="button"]:active
+ {
+  transform: translate(3px);
+}
+
+
+.openbtn {
+
+  top: 1px;
+  position: absolute;
+  margin-left: 1px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.7s;
+  padding-top: 60px;
+  opacity: 1000.0;
+  z-index: 12;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover
+ {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  
+}
+
+.uu
+{
+	top:0px;
+    position: absolute;
+    height: 100%;
+    width:15%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    filter: blur(2px);
+    -webkit-filter:blur(1px);
+    position: fixed;
+    left:89%;
+    background: linear-gradient(#000000,#2d3436);
+    visibility: hidden;
+}
+
+.aa
+{
+ position: absolute;
+ position: fixed;
+ height: 300px;
+ width: 1000px;
+ margin-top: 180px;
+ box-shadow: 10px 20px 8px ;
+ border-top-left-radius: 0px 0px;
+ border-bottom-left-radius: 0px 0px;
+ border-top-right-radius: 200px 200px;
+ border-bottom-right-radius: 200px 200px;
+ background-size: 100%  ;
+ background-repeat: no-repeat;
+ box-sizing: border-box;
+ padding: 10px 70px;
+ border-top: 3.5px solid none ;
+ background-image: url("z10.jpeg");
+}
+.aa input
+{
+  width:50%;
+  margin-bottom:10px;
+}
+.aa input[type="text"],input[type="password"]
+{
+ outline: none;
+ border-bottom: 3.5px solid black;
+ background: transparent;
+ color: white;
+ font-size: 26px;
+ border-top-left-radius: 50px 50px;
+ border-bottom-left-radius: 100px 100px;
+ border-top-right-radius: 50px 50px;
+ border-bottom-right-radius: 100px 100px;
+ border-top: none;
+ border-left: none;
+ border-right: none;
+ transition: 0.2s;
+ text-align: center;
+ letter-spacing: 2px;
+ font-family:georgia,serif;
+}
+::placeholder
+{
+ background: rgba(171, 205, 239, 0.3);
+ opacity: 5.0;
+ filter: alpha(opacity=500);
+ color:white;
+}
+.aa input[type="text"]:hover
+{
+ cursor: pointer;
+ border-bottom: 1.5px solid white;
+ background: transparent;
+}
+.aa input[type="password"]:hover
+{
+ cursor: pointer;
+ border-bottom: 1.5px solid white;
+ background: transparent;
+ 
+}
+.logo
+{
+ box-shadow: 1px 18px 12px ;
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ position: absolute;
+ top: 45px;
+ left: 75%;
+}
+#t1
+{
+ width: 100%;
+ top: 70px;
+ position: absolute;
+ text-align: left;
+ text-transform: uppercase;
+ text-indent: 550px;
+ letter-spacing: 3px;
+ font-family:"georgia";
+ text-shadow: 2px 2px 5px ;
+ font-size: 45px;
+ font-weight: 300px;
+ color: black;
+ filter: blur(0px);	
+
+
+}
+#t2
+{
+ position: absolute;
+ top:140px;
+ text-align: left;
+ text-transform: uppercase;
+ text-indent: 600px;
+ font-family:Times New Roman,Times,serif;
+ font-style: oblique;
+ font-size: 20px;
+ font-weight: bolder;
+}
+.vv
+{
+ margin-top: 190px;
+ position: absolute;
+ height: 300px;
+ width: 433px;
+ left: 1100px;
+ box-shadow: 10px 20px 10px ;
+ border-top-left-radius: 200px 200px;
+ border-bottom-left-radius: 200px 200px;
+ border-top-right-radius: 00px 00px;
+ border-bottom-right-radius: 00px 00px;
+ background-image: url("z10.jpeg");
+ background-size: 100% ;
+ background-repeat: no-repeat;
+ cursor: pointer;
+ box-sizing: border-box;
+ padding: 10px 70px;
+}
+.aa input[type="button"]
+{
+ position: absolute;
+ top:60%;
+ left: 22%;  
+ outline: none;
+ height: 35px;
+ width:90px;
+ color:#fff;
+ background-color: black;
+ font-size: 20px;
+ border-radius: 35px;
+ transition: 0.1s;
+ font-family:cursive;
+}
+.aa input[type="button"]:hover
+{
+ cursor: pointer;
+ color: dimgrey;
+}
+.aa input[type="button"]:active
+{
+  transform: translate(2px);
+}
+.aa input[type="submit"]
+{
+ position: absolute;
+ left: 10%;
+ top: 60%;
+ box-shadow:  0 1px #999; 
+ outline: none;
+ height:35px;
+ width:90px;
+ color:white;
+ background-color: black;
+ font-size: 20px;
+ border-radius: 45px;
+ transition: 0.1s ease;
+ font-family:cursive;
+}
+.aa input[type="submit"]:hover
+{
+ cursor: pointer;
+ color: dimgrey;
+}
+.aa input[type="submit"]:active
+{
+ transform: translate(2px);
+}
+#ww input[type="button"]
+{
+ position: relative;
+ top:40px;
+ left: 25px;
+ box-shadow:  0 1px #999; 
+ outline: none;
+ height: 30px;
+ width:300px;
+ color:white;
+ border-bottom: 1.5px solid ;
+ background: #32508e;
+ font-size: 20px;
+ border-top-left-radius: 30px 30px;
+ border-bottom-left-radius: 30px 30px;
+ border-top-right-radius: 30px 30px;
+ border-bottom-right-radius: 30px 30px;
+ border-top: 0.5px solid #32508e;
+ border-left: 0.5px solid #32508e;
+ border-right: 0.5px solid #32508e;
+ transition: 0.1s ease;
+ font-family:cursive;
+}
+#ww input[type="button"]:hover
+{
+ cursor: pointer;
+ border-bottom: 0.5px solid #32508e;
+}
+#ww input[type="button"]:active
+{
+  transform: translate(1px);
+}
+#cc input[type="button"]
+{
+ position: relative;
+ top:15px;
+ left: 25px;
+ box-shadow:  0 1px #999; 
+ outline: none;
+ height: 30px;
+ width:300px;
+ color:white;
+ border-bottom: 1.5px solid ;
+ background: #55acee;
+ font-size: 20px;
+ border-top-left-radius: 30px 30px;
+ border-bottom-left-radius: 30px 30px;
+ border-top-right-radius: 30px 30px;
+ border-bottom-right-radius: 30px 30px;
+ border-top: 0.5px solid #55acee;
+ border-left: 0.5px solid #55acee;
+ border-right: 0.5px solid #55acee;
+ transition: 0.1s ease;
+ font-family:cursive;
+}
+#cc input[type="button"]:hover
+{
+ cursor: pointer;
+ border-bottom: 0.5px solid #55acee;
+}
+#cc input[type="button"]:active
+{
+ transform: translate(1px);
+}
+#rr input[type="button"]
+{
+ position: relative;
+ top:25px;
+ left: 25px;
+ box-shadow:  0 1px #999; 
+ outline: none;
+ height: 30px;
+ width:300px;
+ color:white;
+ border-bottom: 1.5px solid ;
+ background: #dd4b39;
+ font-size: 20px;
+ border-top-left-radius: 30px 30px;
+ border-bottom-left-radius: 30px 30px;
+ border-top-right-radius: 30px 30px;
+ border-bottom-right-radius: 30px 30px;
+ border-top: 0.5px solid #dd4b39;
+ border-left: 0.5px solid #dd4b39;
+ border-right: 0.5px solid #dd4b39;
+ transition: 0.1s ease;
+ font-family:cursive;
+}
+#rr input[type="button"]:hover
+{
+ cursor: pointer;
+ border-bottom: 0.5px solid #dd4b39;
+}
+ #rr input[type="button"]:active
+{
+ 
+ transform: translate(1px);
+}
+.ll
+{
+ display: block;
+ font-size: 40px;
+ color: #fff;
+ text-align: center;
+ text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.lastpoint
+{
+ position: absolute;
+ top: 94%;
+ height: 45px;
+ width: 100%;
+ }
+.icon
+{
+ position: absolute;
+ margin-left: 10px;
+ top: 10px;
+ margin-top: 10px;
+}
+#i1:hover
+{
+ cursor: default;
+}
+
+</style>
+<script type="text/javascript">
+	function val()
+	{
+     var a=document.form.u1.value;
+     var b=document.form.u2.value;
+     flag=true;
+      if(a==""&& b=="")
+      	{
+      		alert("Full Form is blank");
+      		flag=false;
+      	}
+      	else
+      	{
+      		if(a=="")
+      		{
+      			alet("username is blank");
+      			document.form.u1.focus();
+      			flag=false;
+      		}
+      	
+      	else if(b=="")
+      	{
+          alert("set password");
+          document.form.u2.focus();
+          flag=false;
+        }
+     
+
+    }
+
+return flag;
+}
+</script>
+</head>
+<body>
+    <br/><br/>
+	<div><img src="z10.jpeg" class="uu"></div>
+	<h1 align="center" id="t1"><b>USER LOGIN</b></h1>
+	<br/>
+	<h1 align="center" id="t2">Welcome to the site</h1>
+	
+		<div  class="aa">
+         
+        
+
+			<img src="i1.png" class="logo" >
+			<form action="home.html" name="form" onsubmit="return val()">				
+				<br/><br/>
+				 <input type="text" name="u1" placeholder="username">
+				 <br/><br/>
+				 <input type="password" name="u2" placeholder="password">
+                     <a href="p3.html"><input type="button" name="" value="sign in"></a>
+                     <input type="submit" name="btn" value ="submit" ></form>
+
+			</div>
+		
+		
+	<div class="vv">
+	          <span class="ll">Sign in with<br/>Social Network</span> 
+              <div id="ww"><input type="button" name="" value="Log in with Facebook"></div>
+                <br/><br/>
+              <div id="cc">  <input type="button" name="" value="Log in with Twitter"></div>
+              <div id="rr"><input type="button" name="" value="Log in with Google"></div> 
+
+
+                       </div>
+	</div>
+	<div id="mySidepanel" class="sidepanel" onmouseleave="closeNav()">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="home.html">Home</a>
+  <a href="#">Profile</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<div class="ll1">
+  <button class="openbtn" onclick="openNav()" >☰</button>  
+  <div class="ss"><a href="projectprotype1.html"><input type="button" name="" value="login"></a></div>
+    <div class="dd"><a href="p3.html"><input type="button" name="" value="sign in"></a></div>
+        </div>
+        <div ></div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+  document.getElementById("mySidepanel").style.height ="100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+</script>
+      <div class="lastpoint">
+                  <div class="icon">
+                    <img src ='f.png' width="15px" height="15px" id="i1">
+                    <img src ='tw.png' width="12px" height="15px" id="i2">
+                    <img src ='in.png' width="15px" height="15px" id="i3">
+                  </div>
+        </div>
+</body>
+</html>
